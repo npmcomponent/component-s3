@@ -1,30 +1,17 @@
 {
-  "name": "s3-component",
-  "description": "S3 client upload library",
+  "name": "component-s3",
+  "description": "S3 client upload library, upload files directly from the browser",
   "version": "0.4.0",
   "keywords": [
     "s3",
-    "browser",
+    "file",
+    "upload",
     "cors",
-    "upload"
+    "progress"
   ],
   "dependencies": {
-    "event-component": "*"
+    "component-emitter": "git://github.com/npmcomponent/component-emitter.git",
+    "component-event": "git://github.com/npmcomponent/component-event.git"
   },
-  "devDependencies": {
-    "bytes": "~0.2.1",
-    "express": "~3.1.0",
-    "ms": "~0.5.1",
-    "s3-policy": "~0.1.0"
-  },
-  "license": "MIT",
-  "component": {
-    "scripts": {
-      "s3/index.js": "index.js"
-    }
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/component/s3.git"
-  }
+  "license": "MIT"
 }
